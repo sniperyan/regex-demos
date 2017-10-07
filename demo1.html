@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+</body>
+<script>
+    // 找到&结尾，去除
+    var params1 = 'abc&'
+    console.log(params1.replace(/&$/gi, ''))  //abc
+    // 去除 a
+    var params2 = 'abcabc'
+    console.log(params2.replace(/a/gi, ''))  //bcbc
+
+    // onX(X为a-z,A-Z)
+    if (/^on[A-Za-z]/.test('onclick')){
+        console.log('onclick')
+    }
+    if (/^on[A-Za-z]/.test('onC')){
+        console.log('onC')
+    }
+    if (/^on[A-Za-z]/.test('on1click')){
+        console.log('on1click') //false
+    }
+    
+    
+
+</script>
+
+</html>
